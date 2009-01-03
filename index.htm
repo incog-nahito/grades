@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Course Grades - IITK</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44797524-2"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-44797524-2');
+  </script>
+</head>
+<body>
+  <div class="main-contain">
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center logo-text">Course Grades - IITK</a>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="center-align">
+    <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col input-field s6 m3">
+          <input type="text" class="autocomplete" placeholder="Academic Session" id="academic-session-input" autocomplete="off" />
+          <datalist id="academic-session"></datalist>
+        </div>
+        <div class="col input-field s6 m3">
+          <select name="semester" id="semester">
+            <option value="" disabled selected>Choose semester</option>
+          </select>
+        </div>
+        <div class="col input-field s12 m6">
+          <div class="course-wrapper">
+            <input type="text" list="course-list" placeholder="Course" id="course" autocomplete="off" disabled/>
+            <span class="clear-button">  <i class="material-icons">clear</i></span>
+          </div>
+          <datalist id="course-list"></datalist>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h3 id="course-name"></h3>
+      <h4 id="prof-name"></h4>
+      
+      <section class="pie-chart">
+        <div class="pieID pie">
+          
+        </div>
+        <ul class="pieID legend" id="legend">
+          <li>
+            <em>Maggus</em>
+            <span>718</span>
+          </li>
+          <li>
+            <em>Lassods</em>
+            <span>531</span>
+          </li>
+          <li>
+            <em>Cats</em>
+            <span>868</span>
+          </li>
+          <li>
+            <em>Aliens</em>
+            <span>15</span>
+          </li>
+          <li>
+            <em>OEs accepted</em>
+            <span>0</span>
+          </li>
+        </ul>
+      </section>
+      <h5 id="total-students"></h5>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  <footer>
+    <div class="container center-align">
+    <h5>Hosted on Github</a></h5>
+    </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="js/init.js"></script>
+  <script src="js/ui.js"></script>
+
+  </body>
+</html>
